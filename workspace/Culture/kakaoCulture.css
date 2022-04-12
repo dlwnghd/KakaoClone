@@ -1,95 +1,140 @@
-.content-article {
-    max-width: 952px;
-    /* position: relative; */
-    padding-bottom: 182px;
-    margin: 0 auto;
-}
+/* 카카오 css 따라치기*/
 
-#tlt_main {
-    width: auto;
-    height: 300px;
-}
-
-#tlt_main img{
-    float: left;
-}
-
-#tlt_main .culture_title_name{
-    float: left;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.kakaotic {
-    width: 600px;
-    height: 200px;
-}
-
-p {
-    font-size: 16px;
-    text-align: center;
+/* 기본 틀 */
+body {
     overflow-x: hidden;
+    overflow-y: scroll;
+    word-break: keep-all;
+    word-wrap: break-word;
+    width: 100%;
+    margin: 0;
 }
 
-.btn_flip {
+body {
+    -webkit-text-size-adjust: none;
+}
+
+body, button, input, select, td, textarea, th {
+    font-size: 14px;
+    line-height: 1.5;
+    font-family: KakaoSmall,Apple SD Gothic Neo,Malgun Gothic,맑은 고딕,sans-serif;
+    font-weight: 400;
+    color: #333;
+}
+
+blockquote, body, button, code, dd, div, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, input, legend, li, ol, p ,pre, select, td, textarea, th, ul {
+    margin: 0;
+    padding: 0;
+}
+
+.main-content {
+    width: 100%;
+}
+
+.content-article {
+    position: relative;
+    max-width: 1296px;
+    margin: 0 auto;
+    padding-bottom: 182px;
+}
+
+
+/* 타이틀 */
+.tit_main {
+    padding-top: 96px;
+    font-family: KakaoBig,Apple SD Gothic Neo,Malgun Gothic,맑은 고딕,sans-serif;
+    font-size: 46px;
+    line-height: 66px;
+    color: #000;
+    letter-spacing: -1px;
+    background: url("/workspace/images/ico_tit_culture.gif") no-repeat 0 94px;
+    background-size: 72px 72px;
+}
+
+.tit_main .emph_tit {
     display: block;
-    /* position: absolute; */
-    right: 24px;
-    bottom: 24px;
-    width: 36px;
-    height: 36px;
-    border-radius: 36px;
-    background-color: #eee;
-    opacity: 1;
+    padding-left: 84px;
+    font-weight: 700;
 }
 
-button {
-    border: 0;
-    background-color: transparent;
-    cursor: pointer;
+.tit_main .txt_tit {
+    display: block;
+    margin-top: 22px;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 36px;
 }
 
-.screen_out {
-    position: absolute;
-    /* 텍스트 중앙 정렬 */
+h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+section {
+    display: block;
+}
+
+.cont_culture .section_culture {
+    margin-top: 96px;
     text-align: center;
-    /* 넘어가는 텍스트 숨김 */
-    overflow: hidden;
-    /* 넓이 */
-    width: 0;
-    /* 높이 */
-    height: 0;
-    /* 글 간격 */
-    line-height: 0;
-    /*  */
-    text-indent: -9999px;
 }
 
-#tlt_main {
-    padding-top: 72px;
+/* .cont_culture .section_culture .header_tit{
+    overflow: hidden;
+    position: relative;
+    height: 729px;
+    border-radius: 12px;
+    -webkit-mask-image: -webkit-radial-gradient(#fff,#000);
+} */
+
+.cont_culture .section_culture .header_tit{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    background-color: rgba(0,0,0,.25);
+    content: "";
 }
+
+.cont_culture .section_culture .header_tit .vod_culture {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%,-50%);
+}
+
+video {
+    object-fit: contain;
+}
+
+.cont_culture .section_culture .header_tit .tit_culture {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    font-family: KakaoBig,Apple SD Gothic Neo,Malgun Gothic,맑은 고딕,sans-serif;
+    font-size: 42px;
+    line-height: 62px;
+    letter-spacing: -1px;
+    color: #fff;
+    -webkit-transform: translate(-50%);
+    transform: translateY(-50%);
+}
+
+.cont_culture .section_culture .header_tit .txt_tit {
+    display: block;
+    font-size: 22px;
+    line-height: 32px;
+    margin-bottom: 12px;
+}
+
