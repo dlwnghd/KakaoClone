@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1><a href= "#">kakao</a></h1>
+    <button tpye = "button" id = "dark_Mode">color change</button>
+    <p>
+        What is Lorem Ipsum?
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+        when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+        It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+        It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
+        and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+    </p>
+    
+</body>
+
+<script>
+    // 색깔 변경을 위한 두가지 조건 True(다크모드), False(화이트모드)
+    let dw_Change = true;
+    
+    // ID가 dark_mode 일때의 onclick 함수 생성
+    let dark_Mode = document.getElementById("dark_Mode").onclick = function() {
+
+        // 만약 dw_change 변수가 true 일때는 다크모드 
+        if(dw_Change == true) {
+            
+            // dw_change를 false로 변경해 다음 클릭시 화이트 모드로 변경하도록 유도
+            dw_Change = false;
+
+            document.querySelector('body').style.backgroundColor = 'black';
+            document.querySelector('body').style.color = 'white';
+            console.log(dw_Change);
+        }
+
+        // 만약 dw_change 변수가 false 일때는 화이트 모드
+        else if(dw_Change == false) {
+
+            // dw_change를 true로 변경해 다음 클릭시 다크모드로 변경하도록 유도
+            dw_Change = true;
+            
+            document.querySelector('body').style.backgroundColor = 'white';
+            document.querySelector('body').style.color = 'black';
+            console.log(dw_Change);
+        }
+        
+     }
+        
+</script>
+</html>

@@ -1,0 +1,95 @@
+.content-article {
+    max-width: 952px;
+    /* position: relative; */
+    padding-bottom: 182px;
+    margin: 0 auto;
+}
+
+#tlt_main {
+    width: auto;
+    height: 300px;
+}
+
+#tlt_main img{
+    float: left;
+}
+
+#tlt_main .culture_title_name{
+    float: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.kakaotic {
+    width: 600px;
+    height: 200px;
+}
+
+p {
+    font-size: 16px;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+.btn_flip {
+    display: block;
+    /* position: absolute; */
+    right: 24px;
+    bottom: 24px;
+    width: 36px;
+    height: 36px;
+    border-radius: 36px;
+    background-color: #eee;
+    opacity: 1;
+}
+
+button {
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.screen_out {
+    position: absolute;
+    /* 텍스트 중앙 정렬 */
+    text-align: center;
+    /* 넘어가는 텍스트 숨김 */
+    overflow: hidden;
+    /* 넓이 */
+    width: 0;
+    /* 높이 */
+    height: 0;
+    /* 글 간격 */
+    line-height: 0;
+    /*  */
+    text-indent: -9999px;
+}
+
+#tlt_main {
+    padding-top: 72px;
+}
