@@ -1,25 +1,48 @@
+/* ------------------------ header 시작 ----------------------- */
 * {
   padding: 0;
   margin: 0;
 }
-/* header */
 a {
   text-decoration: none;
 }
 
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 2000;
+  top: 0;
+  left: 0;
+  right: 0;
+  border: 0;
+  background: var(--baseBackground);
+  -webkit-transition: top .2s ease-in-out;
+  transition: top .2s ease-in-out;
+}
+
+#header_box {
+  height: 72px;
+  max-width: 1296px;
+  margin: 0 auto;
+}
+
+
+
 #header_KaKao {
+  padding-top: 24px;
   float: left;
 }
 .menu_Tag {
   float: left;
   font-weight: 600;
-  padding-top: 10px;
+  padding-top: 34.5px;
   padding-right: 28px;
   text-align: center;
   position: relative;
   left: 30%;
 }
 .magnifying_Glass {
+  padding-top: 34.5px;
   float: left;
   position: relative;
   left: 55%;
@@ -27,6 +50,7 @@ a {
   height: 20px;
 }
 .globe {
+  padding-top: 34.5px;
   float: left;
   position: relative;
   left: 57%;
@@ -34,6 +58,7 @@ a {
   height: 20px;
 }
 #Moon {
+  padding-top: 34.5px;
   float: left;
   position: relative;
   left: 59%;
@@ -49,24 +74,4 @@ a:visited {
   color: black;
   text-decoration: none;
 }
-/* Main */
-/* h3 {
-  padding-top: 130px;
-}
-/*손 이미지 */
-/* .ESG_Hand_img {
-  width: 55px;
-  height: 55px;
-}
-.ESG_Name {
-  font-size: 40px;
-}
-.ESG_Name_main {
-  font-size: 34px;
-  font-weight: 520;
-}
-
-.forecast {
-  margin-left: 150px;
-  margin-right: 158.4px;
-} */
+/* ------------------------ header 끝 ----------------------- */

@@ -1,0 +1,36 @@
+/* 폰트 불러오기 */
+
+/* 카카오 작은 폰트 */
+@font-face {
+    font-family: 'KaKaoSmall';
+    /* ⬇️파일경로 */
+    src: url("/workspace/fonts/1ec4116.woff2");
+    /* src: url("/workspace/fonts/25e471a.woff2"); */
+    /* src: url("/workspace/fonts/690a113.woff2"); */
+}
+
+@font-face {
+    font-family: 'KaKaoSmall2';
+    /* ⬇️파일경로 */
+    src: url("/workspace/fonts/25e471a.woff2");
+}
+
+@font-face {
+    font-family: 'KaKaoSmall3';
+    /* ⬇️파일경로 */
+    src: url("/workspace/fonts/690a113.woff2");
+}
+
+
+/* 카카오 큰 폰트 */
+@font-face {
+    font-family: 'KaKaoBig';
+    /* ⬇️파일경로 */
+    src: url("/workspace/fonts/9034912.woff2");
+}
+
+@font-face {
+    font-family: 'KaKaoBig2';
+    /* ⬇️파일경로 */
+    src: url("/workspace/fonts/93b6a9f.woff2");
+}

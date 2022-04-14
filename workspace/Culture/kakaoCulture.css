@@ -1,5 +1,41 @@
 /* 카카오 css 따라치기*/
 
+/* 폰트 불러오기 */
+
+/* 카카오 작은 폰트 */
+@font-face {
+    font-family: 'KaKaoSmall';
+    /* ⬇️파일경로 */
+    src: url("/workspace/fonts/1ec4116.woff2");
+    /* src: url("/workspace/fonts/25e471a.woff2"); */
+    /* src: url("/workspace/fonts/690a113.woff2"); */
+}
+
+@font-face {
+    font-family: 'KaKaoSmall2';
+    /* ⬇️파일경로 */
+    src: url("/workspace/fonts/25e471a.woff2");
+}
+
+@font-face {
+    font-family: 'KaKaoSmall3';
+    /* ⬇️파일경로 */
+    src: url("/workspace/fonts/690a113.woff2");
+}
+
+/* 카카오 큰 폰트 */
+@font-face {
+    font-family: 'KaKaoBig';
+    /* ⬇️파일경로 */
+    src: url("/workspace/fonts/9034912.woff2");
+}
+
+@font-face {
+    font-family: 'KaKaoBig2';
+    /* ⬇️파일경로 */
+    src: url("/workspace/fonts/93b6a9f.woff2");
+}
+
 /* 기본 틀 */
 body {
     overflow-x: hidden;
@@ -14,7 +50,13 @@ body {
     -webkit-text-size-adjust: none;
 }
 
-body, button, input, select, td, textarea, th {
+body,
+button,
+input,
+select,
+td,
+textarea,
+th {
     font-size: 14px;
     line-height: 1.5;
     font-family: KakaoSmall,Apple SD Gothic Neo,Malgun Gothic,맑은 고딕,sans-serif;
@@ -22,24 +64,120 @@ body, button, input, select, td, textarea, th {
     color: #333;
 }
 
-blockquote, body, button, code, dd, div, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, input, legend, li, ol, p ,pre, select, td, textarea, th, ul {
+blockquote,
+body,
+button,
+code,
+dd,
+div,
+dl,
+dt,
+fieldset,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+legend,
+li,
+ol,
+p,
+pre,
+select,
+td,
+textarea,
+th,
+ul {
     margin: 0;
     padding: 0;
 }
 
+/* ------------------------ header 시작 ----------------------- */
+* {
+    padding: 0;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 2000;
+    top: 0;
+    left: 0;
+    right: 0;
+    border: 0;
+    background: var(--baseBackground);
+    -webkit-transition: top .2s ease-in-out;
+    transition: top .2s ease-in-out;
+}
+
+#header_box {
+    height: 72px;
+    max-width: 1296px;
+    margin: 0 auto;
+}
 
 
 
-
-
+#header_KaKao {
+    padding-top: 24px;
+    float: left;
+}
+.menu_Tag {
+    float: left;
+    font-weight: 600;
+    padding-top: 34.5px;
+    padding-right: 28px;
+    text-align: center;
+    position: relative;
+    left: 30%;
+}
+.magnifying_Glass {
+    padding-top: 34.5px;
+    float: left;
+    position: relative;
+    left: 55%;
+    width: 20px;
+    height: 20px;
+}
+.globe {
+    padding-top: 34.5px;
+    float: left;
+    position: relative;
+    left: 57%;
+    width: 20px;
+    height: 20px;
+}
+#Moon {
+    padding-top: 34.5px;
+    float: left;
+    position: relative;
+    left: 59%;
+    width: 20px;
+    height: 20px;
+}
+header > nav {
+    margin-top: 24px;
+    margin-left: 158.4px;
+    margin-right: 158.4px;
+}
+a:visited {
+    color: black;
+    text-decoration: none;
+}
+/* ------------------------ header 끝 ----------------------- */
 
 /* ----------------------- content 시작----------------------- */
 .main-content {
     width: 100%;
 }
 /* ----------------------- content 끝----------------------- */
-
-
 
 /* ----------------------- article 시작 ----------------------- */
 .content-article {
@@ -74,6 +212,7 @@ blockquote, body, button, code, dd, div, dl, dt, fieldset, form, h1, h2, h3, h4,
     font-weight: 400;
     font-size: 36px;
     line-height: 36px;
+    font-family: KaKaoBig2,Apple SD Gothic Neo,Malgun Gothic,맑은 고딕,sans-serif;
 }
 
 h3 {
@@ -81,8 +220,8 @@ h3 {
     font-size: 1.17em;
     margin-block-start: 1em;
     margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
     font-weight: bold;
 }
 
@@ -95,7 +234,7 @@ section {
     text-align: center;
 }
 
-.cont_culture .section_culture .header_tit{
+.cont_culture .section_culture .header_tit {
     overflow: hidden;
     position: relative;
     height: 729px;
@@ -120,7 +259,7 @@ section {
     left: 50%;
     width: 100%;
     height: 100%;
-    -webkit-transform:translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%,-50%);
 }
 
@@ -164,7 +303,8 @@ video {
 .cont_culture .section_culture .desc_section {
     margin-top: 36px;
     padding: 0 260px;
-    font-family: KakaoBig,Apple SD Gothic Neo,Malgun Gothic,맑은 고딕,sans-serif;
+    font-weight: lighter;
+    font-family: KakaoBig2,Apple SD Gothic Neo,Malgun Gothic,맑은 고딕,sans-serif;
     font-size: 18px;
     line-height: 32px;
     word-break: keep-all;
@@ -190,7 +330,7 @@ video {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    height: 100%;    
+    height: 100%;
 }
 
 .cont_culture .section_culture .info_section:nth-of-type(2n) .inner_section {
@@ -242,6 +382,7 @@ video {
     font-size: 18px;
     line-height: 28px;
     color: #919191;
+    font-family: KakaoSmall2,Apple SD Gothic Neo,Malgun Gothic,맑은 고딕,sans-serif;
 }
 
 .cont_culture .section_culture .info_section .info_cont {
@@ -254,6 +395,7 @@ video {
 .cont_culture .section_culture .info_section .desc_info {
     font-size: 16px;
     line-height: 28px;
+    font-family: KakaoSmall2,Apple SD Gothic Neo,Malgun Gothic,맑은 고딕,sans-serif;
     /* color: var(--baseForeground); */
     color: #000;
     word-break: keep-all;
