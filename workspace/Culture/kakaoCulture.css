@@ -133,7 +133,9 @@ header {
 
 /* id=header_KaKao */
 #header_KaKao {
+    /* 외부 상단 여백 */
     padding-top: 24px;
+    /* 왼쪽 정렬 */
     float: left;
 }
 /* menu_Tag클래스 */
@@ -147,6 +149,7 @@ header {
     /* 오른쪽 내부 여백 */
     padding-right: 28px;
     /* 글자 정렬 */
+    /* 글자 중앙 정렬 */
     text-align: center;
     /* 자기자신 기준 위치 참조 */
     position: relative;
@@ -205,6 +208,7 @@ header {
 /* header태그 안에 nav태그 */
 header > nav {
     /* 외부 위쪽 여백 */
+    /* 외부 상단 여백 */
     margin-top: 24px;
     /* 외부 왼쪽 여백 */
     margin-left: 158.4px;
@@ -222,90 +226,153 @@ a:visited {
 /* ------------------------ header 끝 ----------------------- */
 
 /* ----------------------- content 시작----------------------- */
+/* main-content클래스 */
 .main-content {
+    /* 넓이 */
     width: 100%;
 }
 /* ----------------------- content 끝----------------------- */
 
 /* ----------------------- article 시작 ----------------------- */
+/* content-article클래스 */
 .content-article {
-    position: relative;
+    /* 자기자신 기준 위치 참조 */
+    position: relative;;
+    /* 최대 넓이 */
     max-width: 1296px;
     /* 안에서 margin을 껏다가 다시 켜줘야 적용되는 현상이 있음 */
     margin: 0 auto;
+    /* 내부 아래 여백 */
     padding-bottom: 182px;
 }
+/* ----------------------- article 끝 ----------------------- */
 
-/* 타이틀 */
+/* ----------------------- title 시작 ----------------------- */
+/* tit_main클래스 */
 .tit_main {
+    /* 외부 상단 여백 : header가 아직 자리메김이 잘 안되어 있어서 준 속성*/
+    /* 외부 상단 여백 */
+    margin-top: 72px;
+    /* 내부 상단 여백 */
     padding-top: 96px;
+    /* 폰트 불러오기 */
     font-family: KakaoBig,Apple SD Gothic Neo,Malgun Gothic,맑은 고딕,sans-serif;
+    /* 폰트 크기 */
     font-size: 46px;
+    /* 줄 높이 : 텍스트가 공간의 높이 */
     line-height: 66px;
+    /* 폰트 색상 */
     color: #000;
+    /* 폰트 사이의 간격 */
     letter-spacing: -1px;
+    /* 배경 이미지 지정 및 반복❌ 배치(좌측에서부터0 상단에서부터94px) */
     background: url("/workspace/images/ico_tit_culture.gif") no-repeat 0 94px;
+    /* 배경 크기 */
     background-size: 72px 72px;
 }
 
+/* tit_main클래스 안에 emph_tit클래스 */
 .tit_main .emph_tit {
+    /* 디스플레이 유형 block */
     display: block;
+    /* 내부 왼쪽 여백 */
     padding-left: 84px;
+    /* 폰트 굵기 */
     font-weight: 700;
 }
 
+/* tit_main클래스 안에 txt_tit클래스 */
 .tit_main .txt_tit {
+    /* 디스플레이 유형 block */
     display: block;
+    /* 외부 상단 여백 */
     margin-top: 22px;
+    /* 폰트 굵기 */
     font-weight: 400;
+    /* 폰트 크기 */
     font-size: 36px;
+    /* 줄 높이 : 텍스트가 공간의 높이 */
     line-height: 36px;
+    /* 폰트 불러오기 */
     font-family: KaKaoBig2,Apple SD Gothic Neo,Malgun Gothic,맑은 고딕,sans-serif;
 }
 
+/* h3태그 */
 h3 {
+    /* 디스플레이 유형 block */
     display: block;
+    /* 폰트 크기 */
     font-size: 1.17em;
+    /* 요소의 쓰기 모드, 방향성, 텍스트 방향에 따라 물리적 한계에 매핑하는 요소의 논리 블록 시작 마진을 정의 */
     margin-block-start: 1em;
+    /* 요소의 쓰기 모드, 방향성, 텍스트 방향에 따라 물리적 한계에 매핑하는 요소의 논리 블록 끝 마진을 정의 */
     margin-block-end: 1em;
+    /* 요소의 쓰기 모드, 방향성, 텍스트 방향에 따라 물리적 한계에 매핑하는 요소의 논리적 인라인 시작 마진을 정의 */
     margin-inline-start: 0;
+    /* 요소의 쓰기 모드, 방향성, 텍스트 방향에 따라 물리적 한계에 매핑하는 요소의 논리적 인라인 끝 마진을 정의 */
     margin-inline-end: 0;
+    /* 폰트 굵기 */
     font-weight: bold;
 }
 
+/* section태그 */
 section {
+    /* 디스플레이 유형 block */
     display: block;
 }
 
+/* cont_culture클래스 안에 section_culture클래스 */
 .cont_culture .section_culture {
+    /* 외부 상단 여백 */
     margin-top: 96px;
+    /* 글자 중앙 정렬 */
     text-align: center;
 }
 
+/* cont_culture클래스 안에 section_culture클래스 안에 header_tit클래스 */
 .cont_culture .section_culture .header_tit {
+    /* 세로로 넘어가는 글 숨기기 */
     overflow: hidden;
-    position: relative;
+    /* 자기자신 기준 위치 참조 */
+    position: relative;;
+
+    /* 높이 */
     height: 729px;
+    /* 테두리 둥굴기 */
     border-radius: 12px;
+    /* 모름 */
     -webkit-mask-image: -webkit-radial-gradient(#fff,#000);
+    /* 동영상 크기 확인용 테두리 */
+    border: 2px solid black;
 }
 
-/* .cont_culture .section_culture .header_tit{
+.cont_culture .section_culture .header_tit{
+    /* 자기자신 기준 위치 참조 */
     position: relative;
+    /* 왼쪽에서 0만큼 떨어져서 위치 */
     left: 0;
+    /* 상단에서 0만큼 떨어져서 위치 */
     top: 0;
+    /* 넓이 */
     width: 100%;
+    /* 높이 */
     height: 100%;
+    /* 테두리 둥굴기 */
     border-radius: 12px;
+    /* 배경색상 */
     background-color: rgba(0,0,0,.25);
+    /* 모름 */
+    /* 생성한 값으로 요소를 대체 혹은 추가*/
     content: "";
 } */
 
+/* ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐여기부터 */
 .cont_culture .section_culture .header_tit .vod_culture {
     position: absolute;
     top: 50%;
     left: 50%;
     width: 100%;
+    /* 높이 */
     height: 100%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%,-50%);
@@ -331,6 +398,7 @@ video {
 }
 
 .cont_culture .section_culture .header_tit .txt_tit {
+    /* 디스플레이 유형 block */
     display: block;
     font-size: 22px;
     line-height: 32px;
@@ -338,7 +406,9 @@ video {
 }
 
 .cont_culture .section_culture .tit_section {
+    /* 디스플레이 유형 block */
     display: block;
+    /* 외부 상단 여백 */
     margin-top: 240px;
     font-family: KakaoBig,Apple SD Gothic Neo,Malgun Gothic,맑은 고딕,sans-serif;
     font-size: 42px;
@@ -349,6 +419,7 @@ video {
 }
 
 .cont_culture .section_culture .desc_section {
+    /* 외부 상단 여백 */
     margin-top: 36px;
     padding: 0 260px;
     font-weight: lighter;
@@ -361,14 +432,17 @@ video {
 }
 
 .cont_culture .section_culture .desc_section+.info_section {
+    /* 외부 상단 여백 */
     margin-top: 240px;
 }
 
 .cont_culture .section_culture .info_section {
     overflow: hidden;
     width: 1056px;
+    /* 높이 */
     height: 619px;
     margin: 72px auto 0;
+    /* 테두리 둥굴기 */
     border-radius: 12px;
     box-shadow: 2px 5px 40px 0 rgb(0 0 0 / 9%);
     text-align: left;
@@ -378,6 +452,7 @@ video {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    /* 높이 */
     height: 100%;
 }
 
@@ -389,6 +464,7 @@ video {
 }
 
 .cont_culture .section_culture .info_section .wrap_img {
+    /* 디스플레이 유형 block */
     display: block;
     -webkit-box-flex: 1;
     -ms-flex: 1;
@@ -396,25 +472,31 @@ video {
 }
 
 .cont_culture .section_culture .info_section .vod_section {
+    /* 디스플레이 유형 block */
     display: block;
     width: 100%;
+    /* 높이 */
     height: 100%;
 }
 
 .cont_culture .section_culture .info_section .wrap_cont {
     overflow: hidden;
-    position: relative;
+    /* 자기자신 기준 위치 참조 */
+    position: relative;;
     max-width: 528px;
     padding: 72px;
     -webkit-box-flex: 1;
     -ms-flex: 1;
     flex: 1;
     box-sizing: border-box;
-    /* background-color: var(--colorBg10); */
+    /* 배경색상 */
+    background-color: var(--colorBg10);
+    /* 배경색상 */
     background-color: #fff;
 }
 
 .cont_culture .section_culture .info_section .tit_info {
+    /* 디스플레이 유형 block */
     display: block;
     font-family: KakaoBig,Apple SD Gothic Neo,Malgun Gothic,맑은 고딕,sans-serif;
     font-size: 36px;
@@ -425,7 +507,9 @@ video {
 }
 
 .cont_culture .section_culture .info_section .txt_info {
+    /* 디스플레이 유형 block */
     display: block;
+    /* 외부 상단 여백 */
     margin-top: 11px;
     font-size: 18px;
     line-height: 28px;
@@ -450,7 +534,9 @@ video {
 }
 
 .cont_culture .section_culture .info_section .wrap_tag {
+    /* 디스플레이 유형 block */
     display: block;
+    /* 외부 상단 여백 */
     margin-top: 24px;
     font-weight: 300;
     font-size: 16px;
@@ -469,12 +555,14 @@ video {
     bottom: 36px;
     right: 0;
     width: 50px;
+    /* 높이 */
     height: 50px;
 }
 
 .screen_out {
     position: absolute;
     width: 0;
+    /* 높이 */
     height: 0;
     display: none;
 }
