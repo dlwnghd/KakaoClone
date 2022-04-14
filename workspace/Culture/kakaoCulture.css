@@ -37,138 +37,186 @@
 }
 
 /* 기본 틀 */
+
+/* body 태그1 */
 body {
+    /* 가로로 넘어가는 글 숨기기 */
     overflow-x: hidden;
+    /* 세로로 넘어가는 글 스크롤로 바꾸기 */
     overflow-y: scroll;
+    /* 콘텐츠가 박스보다 크고 한중일(CJK) 텍스트라면 줄을 바꿀 때 단어를 끊지 않고 출력.*/
     word-break: keep-all;
+    /* 띄어쓰기가 없는 긴 단어를 요소의 경계에서 break point가 아니어도 줄바꿈 */
     word-wrap: break-word;
+    /* 넓이 */
     width: 100%;
+    /* 외부 여백 */
     margin: 0;
 }
 
+/* body 태그2 */
 body {
+    /* 모름 */
     -webkit-text-size-adjust: none;
 }
 
-body,
-button,
-input,
-select,
-td,
-textarea,
-th {
+/* body, button, input, select, td,textarea, th 태그 */
+body, button, input, select, td,textarea, th {
+    /* 폰트 크기 */
     font-size: 14px;
+    /* 줄 높이 : 텍스트가 공간의 높이 */
     line-height: 1.5;
+    /* 폰트 지정*/
     font-family: KakaoSmall,Apple SD Gothic Neo,Malgun Gothic,맑은 고딕,sans-serif;
+    /* 폰트 굵기 */
     font-weight: 400;
+    /* 폰트 색상 */
     color: #333;
 }
 
-blockquote,
-body,
-button,
-code,
-dd,
-div,
-dl,
-dt,
-fieldset,
-form,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-input,
-legend,
-li,
-ol,
-p,
-pre,
-select,
-td,
-textarea,
-th,
-ul {
+/* blockquote, body, button, code, dd, div, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, input, legend, li, ol, p, pre, select, td, textarea, th, ul태그 */
+blockquote, body, button, code, dd, div, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, input, legend, li, ol, p, pre, select, td, textarea, th, ul {
+    /* 외부 여백 */
     margin: 0;
+    /* 내부 여백 */
     padding: 0;
 }
 
 /* ------------------------ header 시작 ----------------------- */
+/* 전체 */
 * {
+    /* 내부 여백 */
     padding: 0;
+    /* 외부 여백 */
     margin: 0;
 }
+
+/* a태그 */
 a {
+    /* 텍스트 장식 선 없음 */
     text-decoration: none;
 }
 
+/* header태그 */
 header {
+    /* 위치 고정 */
     position: fixed;
+    /* 넓이 */
     width: 100%;
+    /* Z축 순서 */
     z-index: 2000;
+    /* 태그 요소의 위치를 상단을 기준으로 얼마나 밑에 위치시킬건지 지정 */
     top: 0;
+    /* 태그 요소의 위치를 상단을 기준으로 얼마나 왼쪽에 위치시킬건지 지정 */
     left: 0;
+    /* 태그 요소의 위치를 상단을 기준으로 얼마나 오른쪽에 위치시킬건지 지정 */
     right: 0;
+    /* 테두리 */
     border: 0;
+    /* 배경 */
     background: var(--baseBackground);
+    /* 모름 */
     -webkit-transition: top .2s ease-in-out;
+    /* 모름 */
     transition: top .2s ease-in-out;
 }
 
+/* header_box태그 */
 #header_box {
+    /* 높이 */
     height: 72px;
+    /* 최대 넓이 */
     max-width: 1296px;
+    /* 외부 여백 */
     margin: 0 auto;
 }
 
-
-
+/* id=header_KaKao */
 #header_KaKao {
     padding-top: 24px;
     float: left;
 }
+/* menu_Tag클래스 */
 .menu_Tag {
-    float: left;
-    font-weight: 600;
+    /* 위쪽 내부 여백 */
     padding-top: 34.5px;
+    /* 왼쪽 정렬 */
+    float: left;
+    /* 폰트 굵기 */
+    font-weight: 600;
+    /* 오른쪽 내부 여백 */
     padding-right: 28px;
+    /* 글자 정렬 */
     text-align: center;
+    /* 자기자신 기준 위치 참조 */
     position: relative;
+    /* 왼쪽에서 30% 떨어져서 위치 */
     left: 30%;
 }
+
+/* magnifying_Glass클래스(돋보기) */
 .magnifying_Glass {
+    /* 위쪽 내부 여백 */
     padding-top: 34.5px;
+    /* 왼쪽 정렬 */
     float: left;
+    /* 자기자신 기준 위치 참조 */
     position: relative;
+    /* 왼쪽에서 55% 떨어져서 위치 */
     left: 55%;
+    /* 넓이 */
     width: 20px;
+    /* 높이 */
     height: 20px;
 }
+
+/* .globe클래스(언어변경) */
 .globe {
+    /* 위쪽 내부 여백 */
     padding-top: 34.5px;
+    /* 왼쪽 정렬 */
     float: left;
+    /* 자기자신 기준 위치 참조 */
     position: relative;
+    /* 왼쪽에서 57% 떨어져서 위치 */
     left: 57%;
+    /* 넓이 */
     width: 20px;
+    /* 높이 */
     height: 20px;
 }
+
+/* id = Moon */
 #Moon {
+    /* 위쪽 내부 여백 */
     padding-top: 34.5px;
+    /* 왼쪽 정렬 */
     float: left;
+    /* 자기자신 기준 위치 참조 */
     position: relative;
+    /* 왼쪽에서 59% 떨어져서 위치 */
     left: 59%;
+    /* 넓이 */
     width: 20px;
+    /* 높이 */
     height: 20px;
 }
+
+/* header태그 안에 nav태그 */
 header > nav {
+    /* 외부 위쪽 여백 */
     margin-top: 24px;
+    /* 외부 왼쪽 여백 */
     margin-left: 158.4px;
+    /* 외부 오른쪽 여백 */
     margin-right: 158.4px;
 }
+
+/* a태그가 방문된 페이지 라면 */
 a:visited {
+    /* 폰트 색상 */
     color: black;
+    /* 텍스트 장식 선 없음 */
     text-decoration: none;
 }
 /* ------------------------ header 끝 ----------------------- */
@@ -414,3 +462,35 @@ video {
     display: inline-block;
     margin-right: 4px;
 }
+
+/* ---------------------------- top버튼 시작---------------------------- */
+.link_top {
+    position: absolute;
+    bottom: 36px;
+    right: 0;
+    width: 50px;
+    height: 50px;
+}
+
+.screen_out {
+    position: absolute;
+    width: 0;
+    height: 0;
+    display: none;
+}
+
+svg {
+    vertical-align: top;
+}
+
+.ico_top circle {
+    /* fill: var(--baseBackground); */
+    fill: #000;
+}
+
+.ico_top .stroke {
+    /* stroke: var(--baseBackground); */
+    stroke: #fff;
+}
+
+/* ---------------------------- top버튼 끝---------------------------- */
